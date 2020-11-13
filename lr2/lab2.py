@@ -20,7 +20,7 @@ class energy:
  
     def ocup(self):
         self.oc = self.price // self.mdiffrnce
-        return "\nСрок окупаемости мероприятия с названием %s %s месяц" % (self.name, self.oc) 
+        return "\nСрок окупаемости мероприятия с названием %s %s месяц(ев)" % (self.name, self.oc) 
     
     def percentof(self):
         self.prc = self.mdiffrnce / self.price * 100
@@ -31,6 +31,10 @@ exmpl2 = energy("установка топливных фильтров", 124700
 exmpl3 = energy("Установка новых топливных ёмкостей", 221000,"мазут","Топливные резервуары",13400)
 print (exmpl1.ocup())
 print (exmpl1.percentof())
+print (exmpl2.ocup())
+print (exmpl2.percentof())
+print (exmpl3.ocup())
+print (exmpl3.percentof())
 
 elist = list()
 elist.append(exmpl1)
